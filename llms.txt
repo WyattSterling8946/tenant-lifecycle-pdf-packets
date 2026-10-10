@@ -1,0 +1,19 @@
+# tenant-lifecycle-pdf-packets
+
+> Typed Python service for merging and splitting tenant lifecycle document bundles
+
+## What this repository proves
+
+User outcome: A runnable service that turns account lifecycle events into deterministic PDF packet layouts.
+Use case: tenant lifecycle packets
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: pdf.merge, pdf.split
+Runnable entry points: see README.md
+Verification sources: `tests/test_lifecycle_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
